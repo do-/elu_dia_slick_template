@@ -13,8 +13,8 @@ $_DO.toggle_user_options = async function (e, a) {
     $("#user_options").block ()
 
     await response ({type: 'users', action: 'set_option'}, {data})
-
-    reload_page ()
+    
+    $("#user_options").data ('grid').reload ()
 
 }
 

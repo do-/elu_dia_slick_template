@@ -8,30 +8,31 @@
 		<tr><td height=1>
 			<div class="drw form">
 
+				<header>
+					<span data-text="role.label" /> <span data-text="label" />
+				</header>
+
 				<table>
 					<tr>
-						<td>
-						<td><span data-text="role.label" /> <span data-text="label" />
-					<tr>
-						<td>ФИО:
+						<th>ФИО:
 						<td><input name=label />
 					<tr>
-						<td>login:
+						<th>login:
 						<td><input name=login />
 					<tr>
-						<td>E-mail:
+						<th>E-mail:
 						<td><input name=mail />
 				</table>
 
 				<div class=toolbar>
 
-					<button name=edit>Редактировать</button>
+					<button name=edit   class="icon edit">Редактировать</button>
 
-					<button name=pass>Установить пароль</button>
-					<button name=delete>Удалить</button>
+					<button name=pass   class="icon options">Установить пароль</button>
+					<button name=delete class="icon delete">Удалить</button>
 
-					<button name=update>Сохранить</button>
-					<button name=cancel>Отменить</button>
+					<button name=update class="icon ok">Сохранить</button>
+					<button name=cancel class="icon cancel" >Отменить</button>
 
 				</div>
 
