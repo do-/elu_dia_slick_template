@@ -40,6 +40,22 @@ $_DO.update_user = async function (e) {
 
 ////////////////////////////////////////////////////////////////////////////////
 
+$_DO.undelete_user = async function (e) {
+
+    if (!confirm ('Восстановить эту запись?')) return
+
+    let $form = $('.drw.form')
+
+    $form.block ()    
+
+    await response ({type: 'users', action: 'undelete'}, {})
+
+    location.reload ()
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+
 $_DO.choose_tab_user = function (e) {
 
     localStorage.setItem ('user.active_tab', e.tab.id)
